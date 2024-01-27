@@ -1,0 +1,34 @@
+# This workflow will build, test and push the latest version on the beta environment.
+
+on: 
+  push:
+    branches:
+      - 'main'
+          
+name: 🔘 publish
+
+jobs:
+  deploy:
+    name: publish
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+
+                                                 
+      ############################################
+      # Github pages deployment 
+      ###########################################   
+        
+      - name: Setup github Pages
+        uses: actions/configure-pages@v4    
+
+      - name: Upload pen4goods custom site
+        uses: actions/upload-pages-artifact@v3
+        with:	
+          path: './'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
