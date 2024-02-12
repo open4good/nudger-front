@@ -85,3 +85,55 @@
 @import "pixel/components";
 
 // write your custom styles here!
+
+
+
+
+
+// NUDGER STYLES
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+
+.bg-ecoscore { 
+    height : 150px;
+    width : 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    &::before {
+        height : 150px;
+        width : 150px;
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        border-top : 150px solid red;
+        border-right : 150px solid transparent;
+        border-top-left-radius: var(--bs-card-border-radius);
+    }
+
+    span {
+        z-index: 2;
+        font-size: 10rem;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -15px;
+        bottom: 0;
+        margin: auto;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: #000000 1px 1px 1px;
+        line-height: 10rem;
+    }
+
+
+}

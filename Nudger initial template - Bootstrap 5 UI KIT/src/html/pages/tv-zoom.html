@@ -1,0 +1,451 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 5 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kit/pixel-pro-premium-bootstrap-5-ui-kit
+* Copyright 2021 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Contact us if you want to remove it.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('./_head.html', { "path": "../..", "title": "Pixel Pro - Pricing" })
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css" />
+    </head>
+
+    <body>
+        @@include('./_navigation.html', { "path": "../..", "classes": "navbar-dark navbar-theme-primary" })
+        <main>
+            @@include('./_preloader.html', { "path": "../.." })
+
+            <!-- Hero -->
+            <section class="section-header pb-9 pb-lg-12 mb-4 mb-lg-6">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xl-8 text-center">
+                            <h1 class="h1 title text-uppercase text-center">Téléviseur led thomson 32ha2s13</h1>
+                        </div>
+                    </div>
+
+                    <div class="pt-5 pt-md-0 mt-5">
+                        <div class="card shadow p-4">
+                            <section class="row align-items-center">
+                                <aside class="col-12 col-md-6 text-center">
+                                    <div class="bg-ecoscore">
+                                        <span>B</span>
+                                    </div>
+                                    <img src="https://www.cdiscount.com/pdt2/1/0/3/1/700x700/tho1686182513103/rw/thomson-tv-led-80-cm-32ha2s13-smart-tv-32-hd-andro.jpg" alt="TV LED Thomson 32HA2S13 80 cm HD Android TV 2023 Noir" />
+
+                                    <a href="#caracteristiques" class="btn btn-secondary">Caractéristiques techniques</a>
+                                </aside>
+
+                                <div class="col-12 col-md-6">
+                                    <div class="row">
+                                        <div class="p-3 border">
+                                            <h2 class="h3 text-center text-lg-left mb-5">1. Je choisis mon revendeur 👇</h2>
+                                            <!-- Prices -->
+                                            <!--ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="updatePrice nav-link active" id="pills-new-tab" data-bs-toggle="pill" data-bs-target="#pills-new" type="button" role="tab" aria-controls="pills-new" aria-selected="true">
+                                                        Neuf
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button
+                                                        class="nav-link"
+                                                        id="pills-history-tab"
+                                                        data-bs-toggle="pill"
+                                                        data-bs-target="#pills-history"
+                                                        type="button"
+                                                        role="tab"
+                                                        aria-controls="pills-history"
+                                                        aria-selected="false"
+                                                        tabindex="-1"
+                                                    >
+                                                        Evolution des prix
+                                                    </button>
+                                                </li>
+                                            </ul-->
+
+                                            <div class="tab-content">
+                                                <!-- occasion offers -->
+
+                                                <!-- new offers -->
+                                                <div class="tab-pane fade active show" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">
+                                                    <div>
+                                                        <div>
+                                                            <div id="offresNeuves_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 col-md-6"></div>
+                                                                    <div class="col-sm-12 col-md-6"></div>
+                                                                </div>
+                                                                <div class="row dt-row">
+                                                                    <div class="col-sm-12">
+                                                                        <table id="offresNeuves" class="table table-striped dataTable no-footer" style="width: 100%;">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th
+                                                                                        class="sorting"
+                                                                                        tabindex="0"
+                                                                                        aria-controls="offresNeuves"
+                                                                                        rowspan="1"
+                                                                                        colspan="1"
+                                                                                        style="width: 365.383px;"
+                                                                                        aria-label="Marchand: activate to sort column ascending"
+                                                                                    >
+                                                                                        Marchand
+                                                                                    </th>
+                                                                                    <th
+                                                                                        class="sorting sorting_asc"
+                                                                                        tabindex="0"
+                                                                                        aria-controls="offresNeuves"
+                                                                                        rowspan="1"
+                                                                                        colspan="1"
+                                                                                        style="width: 153.267px;"
+                                                                                        aria-sort="ascending"
+                                                                                        aria-label="Prix: activate to sort column descending"
+                                                                                    >
+                                                                                        Prix
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr
+                                                                                    data-token="eyJpZCI6IjY0MDRjZDZmLTQ2YmEtNGYxNy1hMzcwLTFmZTllZDIzZjM5NyIsInRzIjoxNzA2MDE5NDEyMzQ2LCJndGluIjoiOTEyMDEwNjY2MTQyMiIsInByaWNlIjoxNzkuNTUsImRhdGFzb3VyY2VOYW1lIjoicnVlZHVjb21tZXJjZS5mciIsInVybCI6Imh0dHBzOi8vd3d3LmF3aW4xLmNvbS9wY2xpY2sucGhwP3A9MzU5NTgzMDM1MDYmYT01MzAwMzMmbT02OTAxIn0%3D"
+                                                                                    data-compensation="0.7182000000000001"
+                                                                                    class="selected odd"
+                                                                                >
+                                                                                    <td data-toggle="tooltip" data-placement="top" title="TV LED 80 cm 32HA2S13 Smart TV 32 HD Android" nowrap="">
+                                                                                        <img height="16" width="16" class="me-2" src="/icon/rueducommerce.fr" title="icône rueducommerce" />
+
+                                                                                        <span>
+                                                                                            <span>rueducommerce.fr</span>
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td class="sorting_1"><span>179.55</span> <span>€</span></td>
+                                                                                </tr>
+                                                                                <tr
+                                                                                    data-token="eyJpZCI6IjAyOWVmOTE5LWU1ZTEtNDhhMy1hMmFlLTE2NzMzNWQ2YjI0MSIsInRzIjoxNzA2MDE5NDEyMzQ1LCJndGluIjoiOTEyMDEwNjY2MTQyMiIsInByaWNlIjoxODkuMCwiZGF0YXNvdXJjZU5hbWUiOiJjZGlzY291bnQuY29tIiwidXJsIjoiaHR0cHM6Ly93d3cuYXdpbjEuY29tL3BjbGljay5waHA%2FcD0zNjQ1MzMwOTAwMSZhPTUzMDAzMyZtPTY5NDgifQ%3D%3D"
+                                                                                    data-compensation="0.7560000000000001"
+                                                                                    class="even"
+                                                                                >
+                                                                                    <td data-toggle="tooltip" data-placement="top" title="THOMSON TV LED 80 cm 32HA2S13 Smart TV 32 HD Android" nowrap="">
+                                                                                        <img height="16" width="16" class="me-2" src="/icon/cdiscount.com" title="icône cdiscount" />
+
+                                                                                        <span>
+                                                                                            <span>cdiscount.com</span>
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td class="sorting_1"><span>189.0</span> <span>€</span></td>
+                                                                                </tr>
+                                                                                <tr
+                                                                                    data-token="eyJpZCI6IjA3OTE2YjMzLTUzYzgtNDJlNi04ZWY2LThmMzU1OGQ3NTdlZCIsInRzIjoxNzA2MDE5NDEyMzQ2LCJndGluIjoiOTEyMDEwNjY2MTQyMiIsInByaWNlIjoxODkuMCwiZGF0YXNvdXJjZU5hbWUiOiJyYWt1dGVuLmNvbSIsInVybCI6Imh0dHBzOi8vdHJhY2suZWZmaWxpYXRpb24uY29tL3NlcnZsZXQvZWZmaS5yZWRpcj9pZF9jb21wdGV1cj0yMjY4MjYyMSZ1cmw9aHR0cHM6Ly9mci5zaG9wcGluZy5yYWt1dGVuLmNvbS9vZmZlci9idXkvMTEwMjk5MDM2NzgvdGhvbXNvbi0zMmhhMnMxMy0zMi1oZC1zbWFydC10di1zdXItYW5kcm9pZC10di5odG1sIn0%3D"
+                                                                                    data-compensation="0.7560000000000001"
+                                                                                    class="odd"
+                                                                                >
+                                                                                    <td data-toggle="tooltip" data-placement="top" title='Thomson 32HA2S13 32" HD Smart TV sur Android TV' nowrap="">
+                                                                                        <img height="16" width="16" class="me-2" src="/icon/rakuten.com" title="icône rakuten" />
+
+                                                                                        <span>
+                                                                                            <span>rakuten.com</span>
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td class="sorting_1"><span>189.0</span> <span>€</span></td>
+                                                                                </tr>
+                                                                                <tr
+                                                                                    data-token="eyJpZCI6IjMwNzg2ZTg5LTE5MGMtNGI4OC1hYzgxLTgwZWI5NDNlMjA0ZiIsInRzIjoxNzA2MDE5NDEyMjc3LCJndGluIjoiOTEyMDEwNjY2MTQyMiIsInByaWNlIjoxODkuOTksImRhdGFzb3VyY2VOYW1lIjoiZGFydHkuY29tIiwidXJsIjoiaHR0cHM6Ly93d3cuYXdpbjEuY29tL3BjbGljay5waHA%2FcD0zNjM5NTYyNjk1NCZhPTUzMDAzMyZtPTc3MzUifQ%3D%3D"
+                                                                                    data-compensation="0.7599600000000001"
+                                                                                    class="even"
+                                                                                >
+                                                                                    <td data-toggle="tooltip" data-placement="top" title="TV LED Thomson 32HA2S13 80cm HD 2023" nowrap="">
+                                                                                        <img height="16" width="16" class="me-2" src="/icon/darty.com" title="icône darty" />
+
+                                                                                        <span>
+                                                                                            <span>darty.com</span>
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td class="sorting_1"><span>189.99</span> <span>€</span></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 col-md-5"></div>
+                                                                    <div class="col-sm-12 col-md-7"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab">
+                                                    <canvas id="priceChart" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" height="0" width="0"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="p-3 border mt-3">
+                                            <h2 class="h3 text-center text-lg-left mb-5">2. Je compense mon impact 🌎</h2>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <h3 class="h4 title">Compensation écologique</h3>
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <span class="h1 mb-0 text-gray mb-3">
+                                                        <span id="countup-reversment" data-max="0.7182000000000001">0.72</span>
+                                                        <span>€</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <label class="my-1 me-2" for="inlineFormCustomSelectPref">Reversés au nom de votre achat</label>
+                                            <select name="nudge" width="100%" class="form-select" id="inlineFormCustomSelectPref" aria-label="Default select example">
+                                                <option selected="selected" value="DEFAULT">Laisser nudger choisir !</option>
+                                                <option value="1">greenpeace</option>
+                                                <option value="3">Fondation goodplanet</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="action_btn d-flex justify-content-center mt-3">
+                                            <input type="submit" value="Nudger" formtarget="_blank" class="btn btn-primary" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="section section-lg">
+                        <div class="container">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-12 col-lg-6">
+                                    <div class="d-flex flex-wrap justify-content-lg-start">
+                                        <h2 class="h3 text-center text-lg-left mb-5">3. Avantages et défauts*</h2>
+                                        <div class="my-4">
+                                            <div class="d-flex">
+                                                <div class="me-3 me-md-4">
+                                                    <div class="icon icon-md icon-secondary-app">
+                                                        <span class="fas fa-plus"></span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h3 class="h4">Les +</h3>
+                                                    <p>
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita blanditiis adipisci inventore, provident sint architecto reiciendis ut soluta dignissimos non ex cupiditate
+                                                        perspiciatis hic ipsum laudantium. Ex ullam laborum odio.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="my-4">
+                                            <div class="d-flex">
+                                                <div class="me-3 me-md-4">
+                                                    <div class="icon icon-md icon-secondary-app">
+                                                        <span class="fas fa-minus"></span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h3 class="h4">Les -</h3>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero iusto id, sunt minus dolorem pariatur aut quod odio fugiat cupiditate. Sint soluta odit, sunt id assumenda incidunt
+                                                        aspernatur velit quod.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-5">
+                                    <img class="d-none d-lg-inline-block" src="https://www.cdiscount.com/pdt2/1/0/3/1/700x700/tho1686182513103/rw/thomson-tv-led-80-cm-32ha2s13-smart-tv-32-hd-andro.jpg" alt="Mobile App Illustration" />
+                                    <p class="text-center">
+                                        * comparaisons entre un écran OLED et LCD de gamme XXX ou YYY.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-5 pt-md-0 mt-5">
+                        <div class="card shadow p-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6 text-center">
+                                    <div class="p-4">
+                                        <!--div th:if="${product.ecoscore}" class="text-center">				           
+                                           <img class="mt-4"  width="350px" th:alt="'Ecoscore : ' + ${product.ecoscore.letter()}" th:title="'éco-score : ' + ${product.ecoscore.letter()}" th:src="'https://nudger.fr/icons/ecoscore/scoring-'+${product.ecoscore.letter()}+'.png'">
+                                        </div-->
+                                        <div>
+                                            <div class="mt-4 ms-4 progress-wrapper">
+                                                <div class="progress-info">
+                                                    <span><img height="50" src="https://nudger.fr/icons/ecoscore/A.png" /></span>
+                                                    <span class="h4 help-pointer progress-tooltip bg-success" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="La garantie est de 2.00 an(s).">Garantie</span>
+                                                    <div class="progress-percentage">
+                                                        <!-- 
+                                                        <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
+                                                         -->
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" style="width: 100%;"></div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="mt-4 ms-4 progress-wrapper">
+                                                <div class="progress-info">
+                                                    <span><img height="50" src="https://nudger.fr/icons/ecoscore/A.png" /></span>
+                                                    <span class="h4 help-pointer progress-tooltip bg-success" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="La qualité de la donnée est de 5.00 sur 5.">
+                                                        Qualité de la donnée
+                                                    </span>
+                                                    <div class="progress-percentage">
+                                                        <!-- 
+                                                        <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
+                                                         -->
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" style="width: 100%;"></div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="mt-4 ms-4 progress-wrapper">
+                                                <div class="progress-info">
+                                                    <span><img height="50" src="https://nudger.fr/icons/ecoscore/B.png" /></span>
+                                                    <span
+                                                        class="h4 help-pointer progress-tooltip bg-info"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-placement="top"
+                                                        data-bs-original-title="L'indice de réparabilité est de 6.70 sur 10 (3.72/5 en valeur relative)."
+                                                    >
+                                                        Indice de réparabilité
+                                                    </span>
+                                                    <div class="progress-percentage">
+                                                        <!-- 
+                                                        <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
+                                                         -->
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="74" style="width: 74%;"></div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="mt-4 ms-4 progress-wrapper">
+                                                <div class="progress-info">
+                                                    <span><img height="50" src="https://nudger.fr/icons/ecoscore/D.png" /></span>
+                                                    <span
+                                                        class="h4 help-pointer progress-tooltip bg-danger"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-placement="top"
+                                                        data-bs-original-title="La classe énergétique est CLASSE_ENERGY : E -> 1 source(s), 1 conflict(s). (1.11/5 en valeur relative)"
+                                                    >
+                                                        Classe énergétique
+                                                    </span>
+                                                    <div class="progress-percentage">
+                                                        <!-- 
+                                                        <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
+                                                         -->
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="22" style="width: 22%;"></div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="mt-4 ms-4 progress-wrapper">
+                                                <div class="progress-info">
+                                                    <span><img height="50" src="https://nudger.fr/icons/ecoscore/D.png" /></span>
+                                                    <span
+                                                        class="h4 help-pointer progress-tooltip bg-danger"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-placement="top"
+                                                        data-bs-original-title="L'évaluation de la marque indique 2.13 sur 10 (1.06/5 en valeur relative). Cliquez sur 'Explications' pour en savoir plus.  "
+                                                    >
+                                                        Evaluation de la marque
+                                                    </span>
+                                                    <div class="progress-percentage">
+                                                        <!-- 
+                                                        <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
+                                                         -->
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="21" style="width: 21%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-md-6 text-center">
+                                    <div class="card-body d-flex flex-row align-items-center flex-0 border-bottom">
+                                        <div class="d-block">
+                                            <div class="h6 fw-normal text-gray mb-2">Evolution des prix</div>
+                                            <h2 class="h3">10,567</h2>
+                                            <div class="small mt-2">
+                                                <span class="fas fa-angle-up text-success"></span>
+                                                <span class="text-success fw-bold">$10.57%</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex ms-auto">
+                                            <a href="#" class="btn btn-tertiary btn-sm me-3">Month</a>
+                                            <a href="#" class="btn btn-white btn-sm me-3">Week</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <div class="ct-chart-8 ct-major-tenth ct-series-b"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal Content -->
+
+            <div class="modal fade" id="modal-choose" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+                <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="h6 modal-title">Bien choisir sa TV !</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.</p>
+                            <p>
+                                The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify
+                                users as soon as possible of high-risk data breaches that could personally affect them.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary">I accept</button>
+                            <button type="button" class="btn btn-link ms-auto" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End of Modal Content -->
+        </main>
+
+        @@include('./_footer.html', { "path": "../..", "classes": "bg-primary text-white" }) @@include('./_scripts.html', { "path": "../.." })
+
+        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+        <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+        <!-- Datatable init function -->
+        <script>
+            $("#tableProducts").DataTable({});
+        </script>
+    </body>
+</html>
