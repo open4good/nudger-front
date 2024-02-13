@@ -19,7 +19,7 @@ The Npm / gulp build is operated through github-actions, on push / merge. The "d
 
 | **Page** | **Source** | **Target** | **Comment** |
 |---|---|---|---|
-| index | [source](https://nudger.fr/) | [target](https://open4good.github.io/nudger-front/dist/index.html) |  |
+|<a href="http://example.com/" target="_blank">Hello, world!</a>| [target](https://open4good.github.io/nudger-front/dist/index.html) |  |
 | produit | source | [target](https://open4good.github.io/nudger-front/dist/html/pages/tv.html) |  |
 
 
