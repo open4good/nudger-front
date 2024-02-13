@@ -17,10 +17,18 @@ The Npm / gulp build is operated through github-actions, on push / merge. The "d
 
 ## Pages
 
-| **Page** | **Source** | **Target** | **Comment** |
-|---|---|---|---|
-|<a href="http://example.com/" target="_blank">Hello, world!</a>| [target](https://open4good.github.io/nudger-front/dist/index.html) |  |
-| produit | source | [target](https://open4good.github.io/nudger-front/dist/html/pages/tv.html) |  |
+| Page                       | Originale                                                                                     | Cible                                                                                               |
+|----------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Page d'accueil             | <a href="https://nudger.fr" target="_blank">Source</a>                                        | <a href="https://open4good.github.io/nudger-front/dist/index.html" target="_blank">cible</a>        |
+| Page verticale             | <a href="https://open4good.github.io/nudger-front/dist/index.html" target="_blank">Source</a> | <a href="https://open4good.github.io/nudger-front/dist/html/tv.html" target="_blank">cible</a>      |
+| Page produit               |                                                                                               | <a href="https://open4good.github.io/nudger-front/dist/html/tv-zoom.html" target="_blank">cible</a> |
+| Page de recherche globale  |                                                                                               |                                                                                                     |
+| Page eco-score             |                                                                                               |                                                                                                     |
+| Page compensation          |                                                                                               |                                                                                                     |
+| Page Numerique responsable |                                                                                               |                                                                                                     |
+| Page Modèle ouvert         |                                                                                               |                                                                                                     |
+| Page blog                  |                                                                                               |                                                                                                     |
+
 
 
 # [Pixel Pro Bootstrap UI Kit](https://demo.themesberg.com/pixel-pro/)
