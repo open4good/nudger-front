@@ -17,17 +17,28 @@ The Npm / gulp build is operated through github-actions, on push / merge. The "d
 
 ## Pages
 
-| Page                       | Originale                                                                                     | Cible                                                                                               |
-|----------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Page d'accueil             | <a href="https://nudger.fr" target="_blank">Source</a>                                        | <a href="https://open4good.github.io/nudger-front/dist/index.html" target="_blank">cible</a>        |
-| Page verticale             | <a href="https://open4good.github.io/nudger-front/dist/index.html" target="_blank">Source</a> | <a href="https://open4good.github.io/nudger-front/dist/html/tv.html" target="_blank">cible</a>      |
-| Page produit               |                                                                                               | <a href="https://open4good.github.io/nudger-front/dist/html/tv-zoom.html" target="_blank">cible</a> |
-| Page de recherche globale  |                                                                                               |                                                                                                     |
-| Page eco-score             |                                                                                               |                                                                                                     |
-| Page compensation          |                                                                                               |                                                                                                     |
-| Page Numerique responsable |                                                                                               |                                                                                                     |
-| Page Modèle ouvert         |                                                                                               |                                                                                                     |
-| Page blog                  |                                                                                               |                                                                                                     |
+| **Page**                   | **Originale**                                                                                              | **Cible**                                                                                           |
+|----------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Page d'accueil             | <a href="https://nudger.fr" target="_blank">Source</a>                                                     | <a href="https://open4good.github.io/nudger-front/dist/index.html" target="_blank">cible</a>        |
+| Page verticale             | <a href="https://nudger.fr/televiseurs" target="_blank">Source</a>                                         | <a href="https://open4good.github.io/nudger-front/dist/html/tv.html" target="_blank">cible</a>      |
+| Page produit               | <a href="https://nudger.fr/televiseurs/8806094890273-tv-samsung-tq75qn700ctxxc" target="_blank">Source</a> | <a href="https://open4good.github.io/nudger-front/dist/html/tv-zoom.html" target="_blank">cible</a> |
+| Page de recherche globale  | <a href="https://nudger.fr/recherche" target="_blank">Source</a>                                           |                                                                                                     |
+| Page eco-score             | <a href="https://nudger.fr/ecoscore" target="_blank">Source</a>                                            |                                                                                                     |
+| Page compensation          | <a href="https://nudger.fr/compensation-ecologique" target="_blank">Source</a>                             |                                                                                                     |
+| Page Numerique responsable |                                                                                                            |                                                                                                     |
+| Page Modèle ouvert         |                                                                                                            |                                                                                                     |
+| Page open data             | <a href="https://nudger.fr/opendata" target="_blank">Source</a>                                            |                                                                                                     |
+| Page open source           |                                                                                                            |                                                                                                     |
+| Page partenaires           | <a href="https://nudger.fr/partenaires" target="_blank">Source</a>                                         |                                                                                                     |
+| Page équipe                | <a href="https://nudger.fr/equipe" target="_blank">Source</a>                                              |                                                                                                     |
+| Page nous contacter        | <a href="https://nudger.fr/contact" target="_blank">Source</a>                                             |                                                                                                     |
+| Page blog                  | <a href="https://nudger.fr/blog" target="_blank">Source</a>                                                |                                                                                                     |
+| Page blog post             | <a href="https://nudger.fr/blog/ouvertureduprototype" target="_blank">Source</a>                           |                                                                                                     |
+| Page feedback evolution    | <a href="https://nudger.fr/feedback/idea" target="_blank">Source</a>                                       |                                                                                                     |
+| Page feedback bug          | <a href="https://nudger.fr/feedback/bug" target="_blank">Source</a>                                        |                                                                                                     |
+|                            |                                                                                                            |                                                                                                     |
+|                            |                                                                                                            |                                                                                                     |
+|                            |                                                                                                            |                                                                                                     |
 
 
 
