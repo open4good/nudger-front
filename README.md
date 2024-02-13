@@ -15,16 +15,12 @@ The features and pages to be implemented are availlable here. As a reference, th
 
 The Npm / gulp build is operated through github-actions, on push / merge. The "dist" site is available [on the nudger front github pages](https://open4good.github.io/nudger-front/)
 
-
-[source](https://nudger.fr/)
-
-
 ## Pages
 
 | **Page** | **Source** | **Target** | **Comment** |
 |---|---|---|---|
-| index | [source](https://nudger.fr/) | target |  |
-| produit | source | target |  |
+| index | [source](https://nudger.fr/) | [target](https://open4good.github.io/nudger-front/dist/index.html) |  |
+| produit | source | [target](https://open4good.github.io/nudger-front/dist/html/pages/tv.html) |  |
 
 
 # [Pixel Pro Bootstrap UI Kit](https://demo.themesberg.com/pixel-pro/)
