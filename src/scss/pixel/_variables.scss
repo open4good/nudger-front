@@ -60,7 +60,8 @@ $colors: ("blue": $blue,
 // scss-docs-end colors-map
 
 // Color scheme
-$primary  : #242e4c !default;
+//$primary  : #242e4c !default;
+$primary  : $nudgerVert !default;
 $secondary: #1c2540 !default;
 $tertiary : #893168 !default;
 

@@ -42,7 +42,7 @@
 <body>
     @@include('./_navigation.html', {
         "path": ".",
-        "classes": "navbar-dark"
+        "classes": "navbar-light bg-white"
     })
     <main>
 
@@ -50,6 +50,254 @@
             "path": "."
         })
 
+		<!-- Hero -->
+        <section class="section-header overflow-hidden pt-7 pt-lg-8 pb-9 pb-lg-12 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="fw-bolder display-2">Bienvenue sur <img height="75" src="https://nudger.fr/assets/img/nudger-logo-small.png" alt="Logo light"></h1>
+                        <h2 class="h2 text-green-bg-transparent d-inline-flex px-3 my-3">Votre comparateur d'achat, bon pour la planète !</h2>
+						<h2 class="lead fw-normal text-muted mb-4">
+							Chez Nudger, nous vous proposons un coup de pouce pour transformer vos achats en actes engagés pour la planète ! 
+							Comment ? Notre eco-score innovant vous guide vers les produits les plus écologiques. 
+							Nous comparons les prix auprès d'un grand nombre de commerçants. La cerise sur le gâteau ? 
+							Nous reversons 20% de notre chiffre d'affaire à des associations qui luttent pour préserver notre belle planète 🌍 !
+						</h2>
+                        <!-- Button Modal -->
+                        <form method="post" id="searchForm" action="/recherche" data-dashlane-rid="45bdea67ba8175c1" data-form-type="">
+							<div class="d-flex align-items-center row mt-lg-2">
+								<div class="col-12 mb-3 mb-md-0 col-md-6 col-lg-4">
+									<label for="searchInput" class="bg-green px-3 py-2 mb-0">Pour Nudger, tapez ici le produit recherché</label>
+								</div>
+								<div class="col-12 col-md-6 col-lg-8">
+									<div class="input-group">
+										<input type="text" id="searchInput" class="form-control" placeholder="Rechercher dans 85,682 produits" aria-label="Search" aria-describedby="basic-addon1" name="query" data-dashlane-rid="c04fc15a353ceabb" data-form-type="">
+										<button onclick="document.getElementById('searchForm').submit()" class="btn btn-primary" type="button" data-dashlane-label="true" data-dashlane-rid="4c876b4b5578a952" data-form-type=""><span class="fas fa-search"></span></button>
+									</div>
+								</div>
+							</div>
+						</form>
+                    </div>
+                </div>
+            </div>
+            <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2"><svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4"><path d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path></svg></figure>       
+        </section>
+		<div class="container-fluid mt-4">
+			<section class="text-center py-4">
+				<h2 class="h2 text-green-bg-transparent d-inline-flex px-3 my-3">Nudger curieux ? Parcourez les catégories de produits</h2>
+			</section>
+		</div>
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card text-center border-gray-300"><img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="https://cdn-icons-png.flaticon.com/512/3357/3357597.png" alt="Christopher Portrait">
+						<div class="card-body">
+							<h3 class="h5 card-title">Televiseurs</h3>
+							<p class="card-text">Notre eco-score vous permet de choisir un téléviseur moins impactant pour la planète</p>
+						</div>
+						<div class="card-footer bg-white border-0 p-0">
+							<div class="d-grid"><a class="btn btn-primary rounded-0 rounded-bottom" href="/html/pages/tv.html">Découvrir</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card text-center border-gray-300"><img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="https://cdn-icons-png.flaticon.com/512/3357/3357597.png" alt="Christopher Portrait">
+						<div class="card-body">
+							<h3 class="h5 card-title">Réfrigérateur</h3>
+							<p class="card-text">Notre eco-score vous permet de choisir un téléviseur moins impactant pour la planète</p>
+						</div>
+						<div class="card-footer bg-white border-0 p-0">
+							<div class="d-grid"><a class="btn btn-primary rounded-0 rounded-bottom" href="/html/pages/tv.html">Découvrir</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card text-center border-gray-300"><img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="https://cdn-icons-png.flaticon.com/512/3357/3357597.png" alt="Christopher Portrait">
+						<div class="card-body">
+							<h3 class="h5 card-title">Machine à laver</h3>
+							<p class="card-text">Notre eco-score vous permet de choisir un téléviseur moins impactant pour la planète</p>
+						</div>
+						<div class="card-footer bg-white border-0 p-0">
+							<div class="d-grid"><a class="btn btn-primary rounded-0 rounded-bottom" href="/html/pages/tv.html">Découvrir</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card text-center border-gray-300"><img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="https://cdn-icons-png.flaticon.com/512/3357/3357597.png" alt="Christopher Portrait">
+						<div class="card-body">
+							<h3 class="h5 card-title">Sèche linge</h3>
+							<p class="card-text">Notre eco-score vous permet de choisir un téléviseur moins impactant pour la planète</p>
+						</div>
+						<div class="card-footer bg-white border-0 p-0">
+							<div class="d-grid"><a class="btn btn-primary rounded-0 rounded-bottom" href="/html/pages/tv.html">Découvrir</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card text-center border-gray-300"><img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="https://cdn-icons-png.flaticon.com/512/3357/3357597.png" alt="Christopher Portrait">
+						<div class="card-body">
+							<h3 class="h5 card-title">Ordinateur</h3>
+							<p class="card-text">Notre eco-score vous permet de choisir un téléviseur moins impactant pour la planète</p>
+						</div>
+						<div class="card-footer bg-white border-0 p-0">
+							<div class="d-grid"><a class="btn btn-primary rounded-0 rounded-bottom" href="/html/pages/tv.html">Découvrir</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card text-center border-gray-300"><img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="https://cdn-icons-png.flaticon.com/512/3357/3357597.png" alt="Christopher Portrait">
+						<div class="card-body">
+							<h3 class="h5 card-title">Cafetière</h3>
+							<p class="card-text">Notre eco-score vous permet de choisir un téléviseur moins impactant pour la planète</p>
+						</div>
+						<div class="card-footer bg-white border-0 p-0">
+							<div class="d-grid"><a class="btn btn-primary rounded-0 rounded-bottom" href="/html/pages/tv.html">Découvrir</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid mt-4">
+			<section class="text-center py-4">
+				<h2 class="h2 text-green-bg-transparent d-inline-flex px-3 my-3">Notre sélection de produits, plus responsables pour la planète</h2>
+			</section>
+		</div>
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4 mb-3">
+					<div class="card text-center border-gray-300"><img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="https://cdn-icons-png.flaticon.com/512/3357/3357597.png" alt="Christopher Portrait">
+						<div class="card-body">
+							<h3 class="h5 card-title">HISENSE - 435A7KQ</h3>
+							<div class="ecoscore">
+								<ul class="list-unstyled d-flex align-items-center justify-content-center mt-3 fw-bold">
+									<li class="px-2 bg-green rounded-0 fs-1">A</li>
+									<li class="px-2 bg-green rounded-0">B</li>
+									<li class="px-2 bg-green rounded-0">C</li>
+									<li class="px-2 bg-green rounded-0">D</li>
+									<li class="px-2 bg-green rounded-0">E</li>
+								</ul>
+							</div>
+							<p class="card-text">
+								Compensation Nudger : 1,3€<br>
+								Prix : 780€
+							</p>
+						</div>
+						<div class="card-footer bg-white border-0 p-0">
+							<div class="d-grid"><a class="btn btn-primary rounded-0 rounded-bottom" href="/html/pages/tv.html">Je Nudge</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-3">
+					<div class="card text-center border-gray-300"><img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="https://cdn-icons-png.flaticon.com/512/3357/3357597.png" alt="Christopher Portrait">
+						<div class="card-body">
+							<h3 class="h5 card-title">HISENSE - 435A7KQ</h3>
+							<div class="ecoscore">
+								<ul class="list-unstyled d-flex align-items-center justify-content-center mt-3 fw-bold">
+									<li class="px-2 bg-green rounded-0">A</li>
+									<li class="px-2 bg-green rounded-0">B</li>
+									<li class="px-2 bg-green rounded-0 fs-1">C</li>
+									<li class="px-2 bg-green rounded-0">D</li>
+									<li class="px-2 bg-green rounded-0">E</li>
+								</ul>
+							</div>
+							<p class="card-text">
+								Compensation Nudger : 1,3€<br>
+								Prix : 780€
+							</p>
+						</div>
+						<div class="card-footer bg-white border-0 p-0">
+							<div class="d-grid"><a class="btn btn-primary rounded-0 rounded-bottom" href="/html/pages/tv.html">Je Nudge</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-3">
+					<div class="card text-center border-gray-300"><img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="https://cdn-icons-png.flaticon.com/512/3357/3357597.png" alt="Christopher Portrait">
+						<div class="card-body">
+							<h3 class="h5 card-title">HISENSE - 435A7KQ</h3>
+							<div class="ecoscore">
+								<ul class="list-unstyled d-flex align-items-center justify-content-center mt-3 fw-bold">
+									<li class="px-2 bg-green rounded-0">A</li>
+									<li class="px-2 bg-green rounded-0">B</li>
+									<li class="px-2 bg-green rounded-0">C</li>
+									<li class="px-2 bg-green rounded-0">D</li>
+									<li class="px-2 bg-green rounded-0 fs-1">E</li>
+								</ul>
+							</div>
+							<p class="card-text">
+								Compensation Nudger : 1,3€<br>
+								Prix : 780€
+							</p>
+						</div>
+						<div class="card-footer bg-white border-0 p-0">
+							<div class="d-grid"><a class="btn btn-primary rounded-0 rounded-bottom" href="/html/pages/tv.html">Je Nudge</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid bg-green-transparent mt-4">
+			<section class="text-center py-4">
+				<h2 class="h2 text-green-bg-transparent d-inline-flex px-3 my-3">Nos réalisations pour le bien commun</h2>
+			</section>
+		</div>
+		<div class="container-fluid bg-green-transparent py-4">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-6 col-lg-4 py-3">
+					<div class="card text-center h-100">
+						<div class="card-body">
+							<div class="profile-thumbnail mx-auto">
+								<img src="https://media-public.canva.com/quopk/MAE6AJquopk/1/t.png" class="card-img-top border-0" alt="Benjamin Portrait">
+							</div>
+							<h2 class="h2 text-green-bg-transparent d-inline-flex px-3 my-3">150</h2><br>
+							<span class="card-subtitle text-gray fw-normal">Produits référencés sur Nudger.fr</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 py-3">
+					<div class="card text-center h-100">
+						<div class="card-body">
+							<div class="profile-thumbnail mx-auto">
+								<img src="https://media-public.canva.com/Ot8E8/MAC-ipOt8E8/2/t.png" class="card-img-top border-0" alt="Benjamin Portrait">
+							</div>
+							<h2 class="h2 text-green-bg-transparent d-inline-flex px-3 my-3">150</h2><br>
+							<span class="card-subtitle text-gray fw-normal">Nudges réalisés (achats réalisés) sur notre plateforme</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 py-3">
+					<div class="card text-center h-100">
+						<div class="card-body">
+							<div class="profile-thumbnail mx-auto">
+								<img src="https://media-public.canva.com/7JSFs/MADpjk7JSFs/2/t.png" class="card-img-top border-0" alt="Benjamin Portrait">
+							</div>
+							<h2 class="h2 text-green-bg-transparent d-inline-flex px-3 my-3">150</h2><br>
+							<span class="card-subtitle text-gray fw-normal">Reversé à des organisations pour compenser l’impact carbone de notre consommation</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-green-transparent">
+			<section class="text-center py-4">
+				<h2 class="h2 text-green-bg-transparent d-inline-flex px-3 my-3">Découvrez notre philosophie, nos valeurs</h2>
+			</section>
+		</div>
+
+		<div class="container-fluid mt-4">
+			<section class="text-center py-4">
+				<h2 class="h2 text-green-bg-transparent d-inline-flex px-3 my-3">Le saviez-vous ?</h2>
+			</section>
+		</div>
+		<div class="container-fluid mt-4">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-6 col-lg-4 text-center mb-3">
+					<img class="mt-4 w-100" src="https://media.canva.com/1/image-resize/1/290_174_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS81X3hCay9NQUY1ZVk1X3hCay8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAEPHcwKalJaiBOI2aD7Ihj_nq7p9Pzi-uu8Bg8TIVGQk&exp=1709062504&x-canva-quality=screen_3x&csig=AAAAAAAAAAAAAAAAAAAAAPZ7Ixc6xu1NGzk2g-EI1Ji5petWbB8xn9IFEbUfWNOi" alt="Christopher Portrait">
+				</div>
+			</div>
+		</div>
+		<!--
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide slide_1">
@@ -313,7 +561,7 @@
 											<div class="card text-center h-100">
 												<div class="card-body">
 													<div class="profile-thumbnail mx-auto">
-														<img src="../../assets/img/team/profile-picture-2.jpg" class="card-img-top rounded-circle shadow border-0" alt="Benjamin Portrait">
+														<img src="https://media-public.canva.com/quopk/MAE6AJquopk/1/t.png" class="card-img-top rounded-circle shadow border-0" alt="Benjamin Portrait">
 													</div>
 													<h3 class="h5 card-title mb-2 mt-3">150</h3>
 													<span class="card-subtitle text-gray fw-normal">Produits référencés sur Nudger.fr</span>
@@ -459,8 +707,9 @@
 				</div>
 			</div>
 		</div>
+	-->
 
-		<section class="bg-white text-center py-4">
+		<section class="bg-white text-center py-4 mt-4">
 			<h1 class="mb-3">Notre philosophie : le bien commun</h1>
 			<p class="lead mb-0">Découvrez nos valeurs et nos atouts</p>
 		</section>

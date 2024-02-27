@@ -137,3 +137,25 @@
 
 
 }
+
+
+// TEXT
+
+.text-green-bg-transparent {
+    background-color: rgba($nudgerVert_rgb, .1);
+    color: $nudgerVert;
+    border-radius: 1rem;
+}
+.text-green-bg {
+    background-color: $nudgerVert_rgb;
+    border-radius: 1rem;
+}
+
+.bg-green {
+    background-color: $nudgerVert;
+    color: $white;
+    border-radius: 1rem;
+}
+.bg-green-transparent {
+    background-color: rgba($nudgerVert_rgb, .1);
+}
