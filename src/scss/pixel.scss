@@ -147,8 +147,12 @@
     border-radius: 1rem;
 }
 .text-green-bg {
-    background-color: $nudgerVert_rgb;
+    background-color: rgba($nudgerVert_rgb, 1);
     border-radius: 1rem;
+}
+
+.bg-green {
+    background-color: rgba($nudgerVert_rgb, .5);
 }
 
 .ecoscore {
