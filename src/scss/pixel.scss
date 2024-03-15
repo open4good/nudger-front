@@ -142,17 +142,17 @@
 // TEXT
 
 .text-green-bg-transparent {
-    background-color: rgba($nudgerVert_rgb, .1)!important;
+    background-color: $nudgerVert_rgb_alpha_01!important;
     color: $nudgerVert;
     border-radius: 1rem;
 }
 .text-green-bg {
-    background-color: rgba($nudgerVert_rgb, 1)!important;
+    background-color: $nudgerVert_rgb_alpha_1!important;
     border-radius: 1rem;
 }
 
 .bg-green {
-    background-color: rgba($nudgerVert_rgb, .5)!important;
+    background-color: $nudgerVert_rgb_alpha_05!important;
 }
 
 .ecoscore {
@@ -192,7 +192,7 @@
     background-color: $ecovert_E;
 }
 .bg-green-transparent {
-    background-color: rgba($nudgerVert_rgb, .1);
+    background-color: $nudgerVert_rgb_alpha_01;
 }
 
 /* ***************** */
