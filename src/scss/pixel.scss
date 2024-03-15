@@ -142,17 +142,17 @@
 // TEXT
 
 .text-green-bg-transparent {
-    background-color: rgba($nudgerVert_rgb, .1);
+    background-color: rgba($nudgerVert_rgb, .1)!important;
     color: $nudgerVert;
     border-radius: 1rem;
 }
 .text-green-bg {
-    background-color: rgba($nudgerVert_rgb, 1);
+    background-color: rgba($nudgerVert_rgb, 1)!important;
     border-radius: 1rem;
 }
 
 .bg-green {
-    background-color: rgba($nudgerVert_rgb, .5);
+    background-color: rgba($nudgerVert_rgb, .5)!important;
 }
 
 .ecoscore {
