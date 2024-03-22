@@ -253,7 +253,7 @@
                                         </div>
 
                                         <div class="action_btn d-flex justify-content-center mt-3">
-                                            <input type="submit" value="Je Nudge" formtarget="_blank" class="btn btn-primary h2 text-green-bg-transparent d-inline-flex px-3 my-3" />
+                                            <input type="submit" value="Je Nudge" formtarget="_blank" class="btn btn-primary h2 bg-green px-3 my-3" />
                                         </div>
                                     </div>
                                 </div>
@@ -315,8 +315,8 @@
                         <div class="row justify-content-top">
                             <div class="col-12 col-md-6">
                                 <div class="card shadow p-4 h-100">
-                                    <h2 class="h3 text-center text-lg-left">4. L'écoscore</h2>
-                                    <div class="">
+                                    <h2 class="h3 text-center text-lg-left">L'écoscore du produit</h2>
+                                    <div class="text-center">
                                         <div class="ecoscore">
                                             <ul class="list-unstyled d-flex align-items-center justify-content-center mt-3 fw-bold">
                                                 <li class="px-2 ecovert_A rounded-0 fs-1">A</li>
@@ -326,15 +326,18 @@
                                                 <li class="px-2 ecovert_E rounded-0">E</li>
                                             </ul>
                                         </div>
-                                        <div>
+                                        <div class="action_btn d-flex justify-content-center mt-3">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#modal-ecoscore-explain" class="btn btn-primary h2 bg-green px-3 my-3">Comment est-il calculer ?</a>
+                                        </div>
+                                            <!--div>
                                             <div class="mt-4 ms-4 progress-wrapper">
                                                 <div class="progress-info">
                                                     <span><img height="30" src="https://nudger.fr/icons/ecoscore/A.png" /></span>
                                                     <span class="help-pointer progress-tooltip ecovert_A" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="La garantie est de 2.00 an(s).">Garantie</span>
                                                     <div class="progress-percentage">
-                                                        <!-- 
+                                                        
                                                         <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
-                                                        -->
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="progress" style="height: 5px;">
@@ -349,9 +352,9 @@
                                                         Qualité de la donnée
                                                     </span>
                                                     <div class="progress-percentage">
-                                                        <!-- 
+                                                         
                                                         <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
-                                                        -->
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="progress" style="height: 5px;">
@@ -371,9 +374,9 @@
                                                         Indice de réparabilité
                                                     </span>
                                                     <div class="progress-percentage">
-                                                        <!-- 
+                                                        
                                                         <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
-                                                        -->
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="progress" style="height: 5px;">
@@ -393,9 +396,9 @@
                                                         Classe énergétique
                                                     </span>
                                                     <div class="progress-percentage">
-                                                        <!-- 
+                                                        
                                                         <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
-                                                        -->
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="progress" style="height: 5px;">
@@ -415,16 +418,16 @@
                                                         Evaluation de la marque
                                                     </span>
                                                     <div class="progress-percentage">
-                                                        <!-- 
+                                                        
                                                         <span th:if="${score.relativValue}" th:text="${score.relativValue*20}+'%'"></span>
-                                                        -->
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="progress" style="height: 5px;">
                                                     <div class="progress-bar ecovert_C" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="21" style="width: 21%;height: 5px;"></div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div-->
                                     </div>
                                 </div>
                                 
@@ -443,7 +446,7 @@
                                             l'organisme qui a délivré le code barre. Cela n'indique pas nécessairement le lieu de production.
                                         </p>
                                         <div class="action_btn d-flex justify-content-center mt-3">
-                                            <a href="#alternative-responsable" class="btn btn-primary h2 text-green-bg-transparent d-inline-flex px-3 my-3">Je découvre une alternative plus responsable</a>
+                                            <a href="#alternative-responsable" class="btn btn-primary h2 bg-green px-3 my-3">Je découvre une alternative plus responsable</a>
                                         </div>
                                     </div>
                                 </div>
@@ -582,6 +585,23 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary">I accept</button>
                             <button type="button" class="btn btn-link ms-auto" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal-ecoscore-explain" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="h6 modal-title">Comment est calculer le ecoscore ?</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../assets/img/ecoscore-explain.jpg" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link ms-auto" data-bs-dismiss="modal">Trop cool</button>
                         </div>
                     </div>
                 </div>

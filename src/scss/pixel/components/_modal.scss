@@ -42,3 +42,19 @@ $value in $theme-colors {
         @include modal-variant($value);
     }
 }
+
+
+/* pour la modal des filtres uniquement : fixed à droite */
+@media screen and (min-width: 1400px) {
+    .modal-dialog-filtres {
+      margin-right: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 0!important;
+    }
+
+    .modal-dialog-filtres .modal-content,
+    .modal-dialog-filtres .modal-header,
+    .modal-dialog-filtres .modal-body {
+        border-radius: 0!important;
+    }
+}
