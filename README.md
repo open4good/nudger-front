@@ -1,6 +1,6 @@
 # Nudger Bootstrap UI Kit
 
-![alt text](https://nudger.fr/assets/img/nudger-logo.png "Nudger logo")
+![alt text](https://nudger.fr/assets/img/nudger_logo.png "Nudger logo")
 
 This kit is built upon a commercial licence of [Pixel Pro Bootstrap UI Kit](https://demo.themesberg.com/pixel-pro/), you will find the original documentation below.
 
