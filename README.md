@@ -4,13 +4,6 @@
 
 This kit is built upon a commercial licence of [Pixel Pro Bootstrap UI Kit](https://demo.themesberg.com/pixel-pro/), you will find the original documentation below.
 
-## Context
-
-
-Original templating is availlable on [nudger.fr](https://nudger.fr). A full re-design being engaged, this repository aims to bring a new, brillant and amazing front for the nudgers.
-
-The features and pages to be implemented are availlable here. As a reference, the original nudger pages have to be considered as the input for designing the new pages, meaning all components / features avalable on original pages have to be implemented in re-designed pages.
-
 ## Continuous Integration / Continuous delivery
 
 The Npm / gulp build is operated through github-actions, on push / merge. The "dist" site is available [on the nudger front github pages](https://open4good.github.io/nudger-front/)
