@@ -1,9 +1,9 @@
 <template>
-  <div v-lazy-hydrate>
+  <LazyHydrate when-visible>
     <button class="px-2 py-1 bg-gray-200 rounded" @click="count++">
       Clicked {{ count }} times
     </button>
-  </div>
+  </LazyHydrate>
 </template>
 
 <script setup lang="ts">
