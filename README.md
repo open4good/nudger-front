@@ -46,7 +46,7 @@ Celui‑ci permet de différer l'hydratation d'une portion de page.
 ## Tests
 
 ```bash
-pnpm test -- --run
+pnpm test --run
 ```
 
 ## Variables d'environnement
