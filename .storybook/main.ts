@@ -1,5 +1,5 @@
 import { defineNuxtConfig } from 'nuxt/config'
-import { nuxt } from '@storybook-vue/nuxt'
+import { createRequire } from 'module'
 
 // Storybook's Vue preset expects a browser-like global `window` object even
 // when executed in Node during Nuxt's module initialization. Creating a stub
@@ -8,6 +8,9 @@ const g = globalThis as unknown as { window?: unknown }
 if (typeof g.window === 'undefined') {
   g.window = g
 }
+
+const require = createRequire(import.meta.url)
+const { nuxt } = require('@storybook-vue/nuxt')
 
 export default defineNuxtConfig({
   stories: ['../src/**/*.stories.@(js|ts|mdx)'],
