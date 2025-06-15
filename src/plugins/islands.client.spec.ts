@@ -1,11 +1,11 @@
 import { describe, it, expect, vi } from 'vitest'
+import plugin from './islands.client'
+import LazyHydrate from 'vue-lazy-hydration'
+
 vi.mock('#app', () => ({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   defineNuxtPlugin: (fn: any) => fn
 }))
-
-import plugin from './islands.client'
-import LazyHydrate from 'vue-lazy-hydration'
 
 describe('islands plugin', () => {
   it('registers LazyHydrate component', () => {
