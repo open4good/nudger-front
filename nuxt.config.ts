@@ -14,7 +14,6 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     '@nuxt/image',
     process.env.NODE_ENV !== 'production' && '@nuxt/devtools',
-    process.env.NODE_ENV !== 'production' && '@nuxtjs/storybook',
     '@vueuse/nuxt',
     '@vite-pwa/nuxt'
   ].filter(Boolean),
