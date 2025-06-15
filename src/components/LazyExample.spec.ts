@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import LazyExample from './LazyExample.vue'
+import HydrationButton from './HydrationButton.vue'
 
-describe('LazyExample', () => {
+describe('HydrationButton', () => {
   it('increments on click', async () => {
-    const wrapper = mount(LazyExample)
+    const wrapper = mount(HydrationButton)
     await wrapper.find('button').trigger('click')
     expect(wrapper.text()).toContain('1')
   })
