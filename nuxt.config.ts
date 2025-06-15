@@ -58,23 +58,15 @@ export default defineNuxtConfig({
   vite: {
     workerThreads: true,
     cacheDir: '.nuxt/.vite-cache',
-    ssr: {
-      noExternal: ['vue-lazy-hydration', '@nuxt/ui']
-    },
-    resolve: {
-      alias: {
-        vue: 'vue/dist/vue.runtime.esm-bundler.js'
-      }
-    }
   },
   experimental: {
     inlineSSRStyles: true
   },
-  vite: {
-    logLevel: 'info', // ou 'debug' si besoin
-  },
   nitro: {
-    logLevel: 3
+    logLevel: 3,
+    externals: {
+//       inline: ['vue']
+     }
   }
 
 })
