@@ -27,7 +27,10 @@ export default defineNuxtConfig({
       { code: 'fr', iso: 'fr-FR', name: 'Français' }
     ],
     defaultLocale: 'fr',
-    strategy: 'prefix_except_default'
+    strategy: 'prefix_except_default',
+    bundle: {
+      optimizeTranslationDirective: false
+    }
   },
   runtimeConfig: {
     strapiToken: process.env.STRAPI_TOKEN,
