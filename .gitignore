@@ -4,5 +4,8 @@ node_modules/
 .nuxt/
 .output/
 /.husky/*
+!/.husky/_/husky.sh
+!/.husky/_/
+!/.husky/pre-push
 !/.husky/pre-commit
-/.husky/
+!/.husky/
