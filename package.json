@@ -7,6 +7,7 @@
     "build:ssr": "NODE_OPTIONS='--max-old-space-size=8192' nuxt build",
     "generate": "nuxt generate",
     "lint": "eslint .",
+    "format": "prettier --check .",
     "test": "vitest",
     "storybook": "nuxt storybook",
     "storybook:build": "nuxt storybook build",
