@@ -4,8 +4,8 @@ These guidelines apply to all folders in this repository.
 
 ## Workflow
 - Use `pnpm install` to set up the project.
-- Commits must follow Conventional Commits. Run `pnpm commit` to generate the message.
-- Always run `pnpm lint` and `pnpm test` before pushing changes.
+- Commits must follow Conventional Commits.
+- For non regression, always run `pnpm lint` , `pnpm test` and `pnpm build` before pushing changes.
 
 ## Nuxt / Vue
 - This project uses Nuxt 3 with TypeScript. Prefer `<script setup lang="ts">` in components.
@@ -22,6 +22,9 @@ These guidelines apply to all folders in this repository.
 ## Testing
 - Tests use Vitest and live next to the code with a `.spec.ts` suffix.
 - Run tests with `pnpm test --run`.
+
+
+## Strapi
 
 ## Storybook
 - Stories live next to components as `*.stories.ts` or `*.stories.mdx`.

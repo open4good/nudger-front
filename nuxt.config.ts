@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     logLevel: 3,
-    externals: { inline: ['vue'] },
+    //externals: { inline: ['vue'] },
     compatibilityDate: '2025-06-15'
   }
 
