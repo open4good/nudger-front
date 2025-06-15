@@ -64,9 +64,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     logLevel: 3,
-    externals: {
-//       inline: ['vue']
-     }
+    externals: { inline: ['vue'] }
   }
 
 })
