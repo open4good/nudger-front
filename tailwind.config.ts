@@ -4,6 +4,6 @@ export default {
   theme: {
     colors: {}
   },
-  content: [],
+  content: ['./src/**/*.{vue,js,ts}'],
   plugins: []
 } satisfies Config
