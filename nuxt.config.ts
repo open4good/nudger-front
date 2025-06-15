@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   srcDir: 'src',
   modules: [
     '@nuxtjs/tailwindcss',
-    //'@pinia/nuxt',
+    '@pinia/nuxt',
 // TODO : have to configure in order to make SSR build work (pobably strapi url's called at build time)
 //    '@nuxtjs/strapi',
     '@nuxtjs/seo',
