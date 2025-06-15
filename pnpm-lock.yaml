@@ -70,7 +70,7 @@ importers:
         specifier: ^8.6.14
         version: 8.6.14(@types/react@19.1.8)(storybook@8.6.12)
       '@storybook/vue3':
-        specifier: ^9.0.9
+        specifier: ^9.0.10
         version: 9.0.10(storybook@8.6.12)(vue@3.5.16)
       '@tailwindcss/postcss':
         specifier: ^4.1.10
@@ -13803,6 +13803,7 @@ packages:
 
   /text-decoder@1.2.3:
     resolution: {integrity: sha512-3/o9z3X0X0fTupwsYvR03pJ/DjWuqqrfwBgTQzdWDiQSm9KitAyz/9WqsT2JQW7KV2m+bC2ol/zqpW37NHxLaA==}
+    requiresBuild: true
     dependencies:
       b4a: 1.6.7
     dev: true
