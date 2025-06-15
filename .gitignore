@@ -1,0 +1,7 @@
+/package-lock.json
+/.project
+node_modules/
+.nuxt/
+.output/
+/.husky/*
+!/.husky/pre-commit
