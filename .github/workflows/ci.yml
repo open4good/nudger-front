@@ -10,8 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
-      - run: corepack prepare pnpm@10.12.1 --activate
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
       - run: pnpm build
-      - run: pnpm test -- --run
+      - run: pnpm test --run
