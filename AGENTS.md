@@ -21,9 +21,8 @@ Welcome to the Nudger front-end project! This guide is a comprehensive overview 
    - `pnpm test`
    - `pnpm storybook`
    - `pnpm generate:api`
-   - `pnpm build:ssr`
    - `pnpm storybook:build`
-
+9. **Ensuring non regression** : use `pnpm lint`, `pnpm generate` and `pnpm test` to ensure global non regression
 ---
 
 ## Project Structure and Directories

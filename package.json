@@ -10,7 +10,8 @@
     "test": "vitest",
     "storybook": "nuxt storybook",
     "storybook:build": "nuxt storybook build",
-    "postinstall": "husky install",
+    "postinstall": "node node_modules/vue-demi/scripts/postinstall.js && husky install",
+
     "generate:api": "openapi-typescript ./nudger-api.json -o src/api/client.ts",
     "semantic-release": "semantic-release"
   },
@@ -55,7 +56,8 @@
     "semantic-release": "^24.2.5",
     "tailwindcss": "4.1.10",
     "vitest": "^3.2.3",
-    "vue": "^3.5.16"
+    "vue": "^3.5.16",
+    "vue-demi": "^0.14.10"
   },
   "packageManager": "pnpm@8.15.9",
   "dependencies": {
