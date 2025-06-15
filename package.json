@@ -9,9 +9,8 @@
     "lint": "eslint .",
     "format": "prettier --check .",
     "test": "vitest",
-    "storybook": "storybook dev -p 6006 --no-open",
-    "storybook:build": "storybook build",
-    "postinstall": "node node_modules/vue-demi/scripts/postinstall.js && husky install",
+    "storybook": "pnpm exec storybook dev -p 6006 --no-open",
+    "storybook:build": "pnpm exec storybook build",
     "generate:api": "openapi-typescript ./nudger-api.json -o src/api/client.ts",
     "semantic-release": "semantic-release"
   },
