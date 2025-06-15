@@ -9,3 +9,4 @@ Please follow Conventional Commits and GitHub flow.
 5. Open a Pull Request.
 
 A pre-commit hook will run `pnpm lint` and `pnpm test` automatically.
+Run `pnpm format` to verify formatting before committing.

@@ -18,6 +18,7 @@ Welcome to the Nudger front-end project! This guide is a comprehensive overview 
 7. **Static Generation**: `pnpm generate`
 8. **Helper Scripts**:
    - `pnpm lint`
+   - `pnpm format`
    - `pnpm test`
    - `pnpm storybook`
    - `pnpm generate:api`
@@ -153,6 +154,7 @@ export const Primary: Story = {
 - ESLint with Nuxt/Vue recommended rules
 - Prettier integrated via ESLint
 - Run: `pnpm lint`, `pnpm lint --fix`
+- Run: `pnpm format` to check formatting
 - Husky hooks enforce checks on commit
 - Use Conventional Commits (e.g., `feat:`, `fix:`)
 
