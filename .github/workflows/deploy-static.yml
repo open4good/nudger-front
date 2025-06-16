@@ -16,11 +16,6 @@ jobs:
       - uses: actions/checkout@v4
 
       # 2. Node + PNPM (choix explicite de la version Node → builds reproductibles)
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20  # ou 18 LTS si besoin
-          cache: "pnpm"
-
       - uses: pnpm/action-setup@v4
 
       # 3. Dépendances
