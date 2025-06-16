@@ -89,10 +89,20 @@ src/
 - `tests/` or `*.spec.ts` files live next to components or logic.
 
 ### Key Config Files:
-- `nuxt.config.ts`: Nuxt configuration, modules, runtime config
-- `tailwind.config.js`: Tailwind theming
-- `.eslintrc`, `.prettierrc`: Lint/format rules
-- `.storybook/` or Storybook section in `nuxt.config.ts`
+- `nuxt.config.ts` – Nuxt modules and runtime configuration
+- `tailwind.config.ts` – Tailwind theming
+- `tsconfig.json` – TypeScript compiler options and path aliases
+- `eslint.config.mjs` and `.prettierrc` – linting and formatting rules
+- `vitest.config.ts` – test runner configuration
+- `tokens.config.json` – design tokens pulled from Figma
+- `.releaserc.json` – Semantic Release setup
+- `renovate.json` – Renovate bot configuration
+- `pnpm-workspace.yaml` – workspace and package management
+- `package.json` – scripts and dependencies
+- `.storybook/` – Storybook configuration files
+- `nudger-api.json` – OpenAPI specification used by `generate:api`
+- `.env.example` – example environment variables
+- `.husky/` – Git hooks executed on commit
 
 ## Vue 3 & Nuxt 3 Conventions
 
