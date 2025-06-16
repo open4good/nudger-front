@@ -78,6 +78,9 @@ export default defineNuxtConfig({
   vite: {
     workerThreads: true,
     cacheDir: '.nuxt/.vite-cache',
+    css: {
+      devSourcemap: true
+    }
   },
   // Experimental Nuxt features
   experimental: {
