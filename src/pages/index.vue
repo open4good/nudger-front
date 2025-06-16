@@ -1,5 +1,5 @@
 <template>
-  <Card>Welcome to Nudger !</Card>
+  <Card>Welcome to Nudger Next gen !</Card>
 </template>
 
 <script setup lang="ts">
