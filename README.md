@@ -5,7 +5,9 @@
 [![Release](https://github.com/open4good/nudger-front/actions/workflows/release.yml/badge.svg)](https://github.com/open4good/nudger-front/actions/workflows/release.yml)
 [![CodeQL](https://github.com/open4good/nudger-front/actions/workflows/codeql.yml/badge.svg)](https://github.com/open4good/nudger-front/actions/workflows/codeql.yml)
 
-** See it live **
+
+
+## See it live
 
 Experience Nudger frontend online:
 
@@ -15,7 +17,7 @@ Experience Nudger frontend online:
 
 
 
-** Welcome ** to the Nudger front-end project. This guide is a comprehensive overview of the Nuxt 3 application structure, coding conventions, and tooling. It is written for new contributors and AI code-generation agents alike, aiming to ensure consistency and clarity in development.
+**Welcome** to the Nudger front-end project. This guide is a comprehensive overview of the Nuxt 3 application structure, coding conventions, and tooling. It is written for new contributors and AI code-generation agents alike, aiming to ensure consistency and clarity in development.
 
 The Nudger front-end is a Nuxt 3 app (Vue 3) that interfaces with a Strapi headless CMS for content and uses an OpenAPI-described backend for core application data. We employ modern frameworks and best practices – from Tailwind CSS and Pinia, to Vitest and Storybook – to maintain a robust, scalable codebase.
 
@@ -24,10 +26,6 @@ Use this document as the bible for:
 - developing features
 - understanding project architecture
 - and adhering to our coding standards
-
-
-
-
 
 
 ## Getting Started: Installation & Setup
