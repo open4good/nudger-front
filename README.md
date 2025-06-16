@@ -1,6 +1,8 @@
-# Nudger Project- Nuxt 3 Frontend Development Guide
+# Nudger Frontend Project 
 
-Welcome to the Nudger front-end project! This guide is a comprehensive overview of the Nuxt 3 application structure, coding conventions, and tooling. It is written for new contributors and AI code-generation agents alike, aiming to ensure consistency and clarity in development.
+![Build](https://github.com/open4good/nudger-front/actions/workflows/deploy-static.yml/badge.svg)
+
+Welcome to the Nudger front-end project. This guide is a comprehensive overview of the Nuxt 3 application structure, coding conventions, and tooling. It is written for new contributors and AI code-generation agents alike, aiming to ensure consistency and clarity in development.
 
 The Nudger front-end is a Nuxt 3 app (Vue 3) that interfaces with a Strapi headless CMS for content and uses an OpenAPI-described backend for core application data. We employ modern frameworks and best practices – from Tailwind CSS and Pinia, to Vitest and Storybook – to maintain a robust, scalable codebase.
 
