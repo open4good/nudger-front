@@ -3,6 +3,8 @@
 node_modules/
 .nuxt/
 .output/
+coverage/
+dist/
 /storybook-static/
 /.husky/*
 !/.husky/_/husky.sh

@@ -14,6 +14,16 @@ export default defineConfig({
   },
   test: {
     // Use jsdom so Vue components have a browser-like DOM during testing
-    environment: 'jsdom'
+    environment: 'jsdom',
+    // Enable coverage reports and enforce basic thresholds
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'lcov'],
+      reportsDirectory: './coverage',
+      lines: 80,
+      functions: 80,
+      branches: 80,
+      statements: 80
+    }
   }
 })
