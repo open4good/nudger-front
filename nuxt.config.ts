@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   // Source directory for the project
   srcDir: 'src',
   app: {
-      baseURL: '/'
+       baseURL: process.env.BASE_URL || '/',
   },
   // Nuxt modules
   modules: [
