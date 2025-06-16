@@ -1,6 +1,6 @@
 <template>
-  <LazyHydrate when-idle>
-    <ul class="space-y-2">
+  <LazyHydrate v-slot="{ hydrated }" when-idle>
+    <ul v-if="hydrated" class="space-y-2">
       <li
         v-for="item in items"
         :key="item.name"
