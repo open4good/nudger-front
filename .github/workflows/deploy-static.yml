@@ -22,7 +22,7 @@ jobs:
         run: NITRO_PRESET=github_pages pnpm generate
 
       - name: Build Storybook
-        run: pnpm build-storybook -- --output-dir storybook-static
+        run: pnpm storybook:build -- --output-dir storybook-static
 
       - name: Prepare dist/
         run: |
