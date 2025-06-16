@@ -23,7 +23,6 @@ jobs:
 
       - name: Prepare publish directory
         run: |
-          cp CNAME dist/
           mkdir -p dist/storybook
           cp -r storybook-static/* dist/storybook/
 
