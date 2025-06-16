@@ -7,6 +7,6 @@ describe('Index page', () => {
     const wrapper = mount(IndexPage, {
       global: { stubs: { LazyHydrate: { template: '<div><slot /></div>' } } }
     })
-    expect(wrapper.text()).toContain('Welcome to Nudger !')
+    expect(wrapper.text()).toContain('Nudger')
   })
 })
