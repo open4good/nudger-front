@@ -7,7 +7,7 @@
 
 
 
-## See it live
+## Nudger UI in action
 
 Experience Nudger frontend online:
 
@@ -17,7 +17,7 @@ Experience Nudger frontend online:
 
 
 
-**Welcome** to the Nudger front-end project. This guide is a comprehensive overview of the Nuxt 3 application structure, coding conventions, and tooling.
+**Welcome** to the Nudger front-end project. This guide is a comprehensive overview of the Nudger UI application structure, coding conventions, and tooling.
 
 The Nudger front-end is a Nuxt 3 app (Vue 3) that interfaces with a Strapi headless CMS for content and uses an OpenAPI-described backend for core application data. We employ modern frameworks and best practices – from Tailwind CSS and Pinia, to Vitest and Storybook – to maintain a robust, scalable codebase.
 
@@ -25,7 +25,7 @@ Use this document as the bible for:
 
 - developing features
 - understanding project architecture
-- and adhering to our coding standards
+- adhering to our coding standards
 
 
 ## Getting Started: Installation & Setup
