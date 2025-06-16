@@ -24,7 +24,7 @@ To get the project up and running locally, follow these steps:
 
 2. **Clone the Repository**:  
    ```bash
-   git clone https://github.com/your-org/nudger-nuxt-front.git
+   git clone https://github.com/open4good/nudger-front.git
    ```
 
 3. **Install Dependencies**:  
