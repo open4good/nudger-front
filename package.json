@@ -5,6 +5,7 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "build:ssr": "NODE_OPTIONS='--max-old-space-size=8192' nuxt build",
+    "preview": "nuxt preview",
     "generate": "nuxt generate",
     "lint": "eslint .",
     "format": "prettier --check .",
