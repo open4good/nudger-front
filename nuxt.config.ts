@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   // Source directory for the project
   srcDir: 'src',
   app: {
-      baseURL: process.env.NITRO_PRESET === 'github_pages' ? '/nudger-front/' : '/'
+      baseURL: '/'
   },
   // Nuxt modules
   modules: [
