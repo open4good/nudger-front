@@ -19,6 +19,8 @@ jobs:
         run: |
           pnpm preview &
           PREVIEW_PID=$!
+          trap "kill $PREVIEW_PID" EXIT
           npx wait-on http://localhost:3000
-          curl -sf http://localhost:3000
-          kill $PREVIEW_PID
+          for route in / /404.html /sitemap.xml; do
+            curl -sf "http://localhost:3000$route"
+          done
