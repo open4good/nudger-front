@@ -1,28 +1,38 @@
+import type { NuxtConfig } from '@nuxt/schema'
+
 export default defineNuxtConfig({
+  // Enable server-side rendering
   ssr: true,
+  // Disable Nuxt telemetry
   telemetry: false,
+  // Source directory for the project
   srcDir: 'src',
+
+  // Nuxt modules
   modules: [
-    '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
-// TODO : have to configure in order to make SSR build work (pobably strapi url's called at build time)
-//    '@nuxtjs/strapi',
-    '@nuxtjs/seo',
+    '@nuxt/image',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',
-    '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    '@nuxt/image',
-    process.env.NODE_ENV !== 'production' && '@nuxt/devtools',
+    '@nuxtjs/seo',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    '@vite-pwa/nuxt',
     '@vueuse/nuxt',
-    '@vite-pwa/nuxt'
+    // Only enable devtools in non-production environments
+    process.env.NODE_ENV !== 'production' && '@nuxt/devtools'
   ].filter(Boolean),
   devtools: {
     enabled: process.env.NODE_ENV !== 'production'
   },
+
+  // Additional build options
   build: {
     transpile: ['vue-demi', '@vueuse/core', '@vueuse/shared']
   },
+
+  // Internationalization settings
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', name: 'English' },
@@ -34,6 +44,7 @@ export default defineNuxtConfig({
       optimizeTranslationDirective: false
     }
   },
+  // Runtime configuration available on both client and server
   runtimeConfig: {
     strapiToken: process.env.STRAPI_TOKEN,
     public: {
@@ -42,6 +53,7 @@ export default defineNuxtConfig({
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL
     }
   },
+  // Progressive Web App configuration
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
@@ -60,17 +72,20 @@ export default defineNuxtConfig({
       ]
     }
   },
+  // Vite configuration tweaks
   vite: {
     workerThreads: true,
     cacheDir: '.nuxt/.vite-cache',
   },
+  // Experimental Nuxt features
   experimental: {
     inlineSSRStyles: true
   },
+  // Nitro server options
   nitro: {
     logLevel: 3,
     //externals: { inline: ['vue'] },
     compatibilityDate: '2025-06-15'
   }
 
-})
+} satisfies NuxtConfig)
