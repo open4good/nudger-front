@@ -5,20 +5,15 @@
 [![Release](https://github.com/open4good/nudger-front/actions/workflows/release.yml/badge.svg)](https://github.com/open4good/nudger-front/actions/workflows/release.yml)
 [![CodeQL](https://github.com/open4good/nudger-front/actions/workflows/codeql.yml/badge.svg)](https://github.com/open4good/nudger-front/actions/workflows/codeql.yml)
 
-
 ## See it live
 
-Experience Nudger online:
+Experience Nudger frontend online:
 
-- [https://demo.nudger.fr](https://demo.nudger.fr) – server-rendered demo.
-- [https://static.nudger.fr](https://static.nudger.fr) – statically generated version hosted on GitHub Pages.
 - [https://static.nudger.fr/storybook](https://static.nudger.fr/storybook) – Storybook component showcase.
-
-
-
+- [https://static.nudger.fr](https://static.nudger.fr) – statically generated version hosted on GitHub Pages.
+- [https://demo.nudger.fr](https://demo.nudger.fr) – server-rendered demo.
 
 ## Welcome !
-
 
 Welcome to the Nudger front-end project. This guide is a comprehensive overview of the Nuxt 3 application structure, coding conventions, and tooling. It is written for new contributors and AI code-generation agents alike, aiming to ensure consistency and clarity in development.
 
