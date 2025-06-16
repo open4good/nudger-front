@@ -18,6 +18,15 @@ jobs:
       - name: Build static site
         run: pnpm generate
 
+      - name: Build Storybook
+        run: pnpm storybook:build
+
+      - name: Prepare publish directory
+        run: |
+          cp CNAME dist/
+          mkdir -p dist/storybook
+          cp -r storybook-static/* dist/storybook/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
