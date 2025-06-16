@@ -57,9 +57,17 @@ To get the project up and running locally, follow these steps:
    - `pnpm lint` – run ESLint
    - `pnpm test` – run tests with Vitest
    - `pnpm storybook` – launch Storybook
-   - `pnpm generate:api` – regenerate TypeScript API client
-   - `pnpm build:ssr` – build with increased memory
-   - `pnpm storybook:build` – build Storybook static site
+  - `pnpm generate:api` – regenerate TypeScript API client
+  - `pnpm build:ssr` – build with increased memory
+  - `pnpm storybook:build` – build Storybook static site
+
+## Design Tokens
+
+Design tokens are configured in `tokens.config.json`. Replace the
+`figmaFileId` placeholder with the ID from your Figma file URL
+(e.g. `https://www.figma.com/file/<FILE_ID>/...`) and provide a
+`FIGMA_TOKEN` environment variable. After setting these values, run
+your design token generation command to pull the latest tokens.
 
 ## Project Structure
 
