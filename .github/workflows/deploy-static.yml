@@ -26,10 +26,11 @@ jobs:
 
       - name: Prepare dist/
         run: |
-          cp -rT .output/public dist/
-          mkdir -p dist/storybook
-          cp -r storybook-static/* dist/storybook/
-          echo 'nudger.fr' > dist/CNAME
+            rm -rf dist
+            mkdir -p dist/storybook
+            cp -r .output/public/* dist/
+            cp -r storybook-static/* dist/storybook/
+            echo 'nudger.fr' > dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
