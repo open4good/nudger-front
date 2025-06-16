@@ -14,3 +14,11 @@ jobs:
       - run: pnpm lint
       - run: pnpm generate
       - run: pnpm test run
+      - run: pnpm build
+      - name: Verify production build
+        run: |
+          pnpm preview &
+          PREVIEW_PID=$!
+          npx wait-on http://localhost:3000
+          curl -sf http://localhost:3000
+          kill $PREVIEW_PID
