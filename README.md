@@ -1,16 +1,39 @@
 # Nudger Frontend Project 
 
+TODO : Add more relevant badges, (building, pages deployment, testings, and all possible one)
 ![Build](https://github.com/open4good/nudger-front/actions/workflows/deploy-static.yml/badge.svg)
+
+
+## See it live 
+
+>> Introduce the live demo
+"Un dessin vaut 10 discours"
+
+TODO : Improve, document, present it nicely
+https://demo.nudger.fr/ -> The live SSR version of nudger front
+https://static.nudger.fr/ -> The live static version of nudger front
+https://static.nudger.fr/storybook -> The nudger storybook
+
+
+
+
+## Welcome !
+
 
 Welcome to the Nudger front-end project. This guide is a comprehensive overview of the Nuxt 3 application structure, coding conventions, and tooling. It is written for new contributors and AI code-generation agents alike, aiming to ensure consistency and clarity in development.
 
 The Nudger front-end is a Nuxt 3 app (Vue 3) that interfaces with a Strapi headless CMS for content and uses an OpenAPI-described backend for core application data. We employ modern frameworks and best practices – from Tailwind CSS and Pinia, to Vitest and Storybook – to maintain a robust, scalable codebase.
 
-Use this document as a roadmap for:
+Use this document as the bible for:
 
-- developing features,
-- understanding project architecture,
-- and adhering to our coding standards.
+- developing features
+- understanding project architecture
+- and adhering to our coding standards
+
+
+
+
+
 
 ## Getting Started: Installation & Setup
 
