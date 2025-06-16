@@ -7,7 +7,9 @@ export default defineNuxtConfig({
   telemetry: false,
   // Source directory for the project
   srcDir: 'src',
-
+  app: {
+      baseURL: process.env.NITRO_PRESET === 'github_pages' ? '/nudger-front/' : '/'
+  },
   // Nuxt modules
   modules: [
     '@nuxt/image',
@@ -85,7 +87,8 @@ export default defineNuxtConfig({
   nitro: {
     logLevel: 3,
     //externals: { inline: ['vue'] },
-    compatibilityDate: '2025-06-15'
+    compatibilityDate: '2025-06-15',
+    preset: process.env.NITRO_PRESET === 'github_pages' ? 'github-pages' : undefined
   }
 
 } satisfies NuxtConfig)

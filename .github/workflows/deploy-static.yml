@@ -1,52 +1,40 @@
-name: Deploy Static
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
-
-    env:
-      CUSTOM_DOMAIN: "nudger.fr"   # ← mets ton domaine ou laisse vide
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # Build Nuxt static site
-      - name: Build static site
-        run: pnpm generate
+      - name: Build Nuxt (GitHub Pages)
+        run: NITRO_PRESET=github_pages pnpm generate
 
-      # Build Storybook
       - name: Build Storybook
-        run: pnpm storybook:build
+        run: pnpm build-storybook -- --output-dir storybook-static
 
-      # Prépare le dossier dist (copie propre de Nuxt)
-      - name: Prepare dist folder
+      - name: Prepare dist/
         run: |
-          rm -rf dist              # supprime toute trace précédente
-          cp -rT .output/public dist
-
-      # Ajoute Storybook sous /storybook
-      - name: Copy Storybook to dist/storybook
-        run: |
+          cp -rT .output/public dist/
           mkdir -p dist/storybook
           cp -r storybook-static/* dist/storybook/
+          echo 'nudger.fr' > dist/CNAME
 
-      # Ajoute CNAME si domaine custom
-      - name: Add CNAME file
-        if: env.CUSTOM_DOMAIN != ''
-        run: echo "${CUSTOM_DOMAIN}" > dist/CNAME
-
-      # Déploiement GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          publish_dir: ./dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
