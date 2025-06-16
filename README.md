@@ -52,7 +52,8 @@ To get the project up and running locally, follow these steps:
    Copy `.env.example` to `.env` and set the following:
    - `STRAPI_URL`: Base URL of the Strapi CMS (e.g. `http://localhost:1337`)
    - `STRAPI_TOKEN`: API access token for Strapi (read-only)
-   - Other optional variables: `NUXT_PUBLIC_SITE_URL`, etc.  
+   - `BASE_URL`: Base path for the Nuxt app (default `/`)
+   - Other optional variables: `NUXT_PUBLIC_SITE_URL`, etc.
      These are declared in `nuxt.config.ts` under `runtimeConfig`.
 
 5. **Run the Dev Server**:  
