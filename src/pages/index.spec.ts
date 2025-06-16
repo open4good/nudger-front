@@ -3,10 +3,11 @@ import { mount } from '@vue/test-utils'
 import IndexPage from './index.vue'
 
 describe('Index page', () => {
-  it('renders welcome text', () => {
+  it('renders welcome text and listbox', () => {
     const wrapper = mount(IndexPage, {
       global: { stubs: { LazyHydrate: { template: '<div><slot /></div>' } } }
     })
     expect(wrapper.text()).toContain('Nudger')
+    expect(wrapper.text()).toContain('Association A')
   })
 })
