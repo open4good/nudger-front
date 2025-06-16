@@ -9,46 +9,44 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      CUSTOM_DOMAIN: "nudger.fr"
+      CUSTOM_DOMAIN: "nudger.fr"   # ← mets ton domaine ou laisse vide
 
     steps:
-      # 1. Checkout
       - uses: actions/checkout@v4
 
-      # 2. Node + PNPM (choix explicite de la version Node → builds reproductibles)
       - uses: pnpm/action-setup@v4
 
-      # 3. Dépendances
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # 4. Build Nuxt (static) et Storybook
+      # Build Nuxt static site
       - name: Build static site
         run: pnpm generate
 
+      # Build Storybook
       - name: Build Storybook
         run: pnpm storybook:build
 
-      # 5. Prépare le dossier dist
-      - name: Copy Nuxt output to dist
+      # Prépare le dossier dist (copie propre de Nuxt)
+      - name: Prepare dist folder
         run: |
-          mkdir -p dist
-          cp -r .output/public/* dist/
+          rm -rf dist              # supprime toute trace précédente
+          cp -rT .output/public dist
 
+      # Ajoute Storybook sous /storybook
       - name: Copy Storybook to dist/storybook
         run: |
           mkdir -p dist/storybook
           cp -r storybook-static/* dist/storybook/
 
-      # 6. Ajoute CNAME si domaine personnalisé
+      # Ajoute CNAME si domaine custom
       - name: Add CNAME file
         if: env.CUSTOM_DOMAIN != ''
         run: echo "${CUSTOM_DOMAIN}" > dist/CNAME
 
-      # 7. Déploiement GitHub Pages
+      # Déploiement GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           publish_dir: ./dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Jekyll désactivé par défaut (.nojekyll auto-créé)
