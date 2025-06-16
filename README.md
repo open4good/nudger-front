@@ -275,7 +275,12 @@ export const Primary = {
 - Deploy via:
   - Node server: `.output/server/index.mjs`
   - Vercel/Netlify (with Nitro adapter)
-  - Static generation (if suitable): `pnpm generate`
+- Static generation (if suitable): `pnpm generate`
+
+- Production deployments are served from **GitHub Pages** at
+  [https://static.nudger.fr](https://static.nudger.fr). The Storybook is
+  published alongside the site under
+  [https://static.nudger.fr/storybook/](https://static.nudger.fr/storybook/).
 
 - CI likely includes:
   - Tests and lint on PRs
