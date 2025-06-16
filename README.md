@@ -1,18 +1,18 @@
-# Nudger Frontend Project 
+# Nudger Frontend Project
 
-TODO : Add more relevant badges, (building, pages deployment, testings, and all possible one)
-![Build](https://github.com/open4good/nudger-front/actions/workflows/deploy-static.yml/badge.svg)
+[![CI](https://github.com/open4good/nudger-front/actions/workflows/ci.yml/badge.svg)](https://github.com/open4good/nudger-front/actions/workflows/ci.yml)
+[![Static Deploy](https://github.com/open4good/nudger-front/actions/workflows/deploy-static.yml/badge.svg)](https://github.com/open4good/nudger-front/actions/workflows/deploy-static.yml)
+[![Release](https://github.com/open4good/nudger-front/actions/workflows/release.yml/badge.svg)](https://github.com/open4good/nudger-front/actions/workflows/release.yml)
+[![CodeQL](https://github.com/open4good/nudger-front/actions/workflows/codeql.yml/badge.svg)](https://github.com/open4good/nudger-front/actions/workflows/codeql.yml)
 
 
-## See it live 
+## See it live
 
->> Introduce the live demo
-"Un dessin vaut 10 discours"
+Experience Nudger online:
 
-TODO : Improve, document, present it nicely
-https://demo.nudger.fr/ -> The live SSR version of nudger front
-https://static.nudger.fr/ -> The live static version of nudger front
-https://static.nudger.fr/storybook -> The nudger storybook
+- [https://demo.nudger.fr](https://demo.nudger.fr) – server-rendered demo.
+- [https://static.nudger.fr](https://static.nudger.fr) – statically generated version hosted on GitHub Pages.
+- [https://static.nudger.fr/storybook](https://static.nudger.fr/storybook) – Storybook component showcase.
 
 
 
@@ -318,6 +318,15 @@ export const Primary = {
 - CI likely includes:
   - Tests and lint on PRs
   - Semantic release (automated versioning via commit messages)
+
+## Contributing
+
+We welcome pull requests! To contribute:
+
+1. Fork this repository and create a feature branch.
+2. Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
+3. Run `pnpm lint`, `pnpm generate`, and `pnpm test run` before committing.
+4. Open a pull request against the `main` branch.
 
 ## Semantic Commit Examples
 
