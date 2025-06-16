@@ -7,7 +7,7 @@ export default {
   // Custom theme values. Colors come from `tokens.config.json` if defined,
   // otherwise Tailwind's defaults are used.
   theme: {
-    colors: {}
+    extend: {}
   },
 
   // Extra Tailwind plugins to load
