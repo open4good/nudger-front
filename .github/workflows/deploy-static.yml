@@ -30,7 +30,7 @@ jobs:
             mkdir -p dist/storybook
             cp -r .output/public/* dist/
             cp -r storybook-static/* dist/storybook/
-            echo 'nudger.fr' > dist/CNAME
+            echo 'static.nudger.fr' > dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
