@@ -74,12 +74,13 @@ To get the project up and running locally, follow these steps:
 
 8. **Other Useful Scripts**:
    - `pnpm lint` – run ESLint
+   - `pnpm format` – check formatting
    - `pnpm test` – run tests with Vitest
- - `pnpm storybook` – launch Storybook
-  - `pnpm generate:api` – regenerate TypeScript API client
-  - `pnpm preview` – serve the production build locally
-  - `pnpm build:ssr` – build with increased memory
-  - `pnpm storybook:build` – build Storybook static site
+   - `pnpm storybook` – launch Storybook
+   - `pnpm generate:api` – regenerate TypeScript API client
+   - `pnpm preview` – serve the production build locally
+   - `pnpm build:ssr` – build with increased memory
+   - `pnpm storybook:build` – build Storybook static site
 
 ## Design Tokens
 
