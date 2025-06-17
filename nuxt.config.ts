@@ -87,7 +87,7 @@ export default defineNuxtConfig({
   nitro: {
     logLevel: 3,
     //externals: { inline: ['vue'] },
-    compatibilityDate: '2025-06-15',
+    compatibilityDate: '2025-06-16',
     preset: process.env.NITRO_PRESET === 'github_pages' ? 'github-pages' : undefined
   }
 
