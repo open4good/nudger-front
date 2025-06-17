@@ -314,6 +314,8 @@ export const Primary = {
 - CI likely includes:
   - Tests and lint on PRs
   - Semantic release (automated versioning via commit messages)
+  - Production build verification of URLs defined in `URL_CHECKS` in
+    `.github/workflows/ci.yml`
 
 ## Contributing
 
