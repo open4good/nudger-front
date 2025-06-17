@@ -109,6 +109,7 @@ src/
 
 ### Key Config Files:
 - `nuxt.config.ts` – Nuxt modules and runtime configuration
+- Global HTML language and default meta tags are defined in `nuxt.config.ts` under `app.head`.
 - `tailwind.config.ts` – Tailwind theming
 - `tsconfig.json` – TypeScript compiler options and path aliases
 - `eslint.config.mjs` and `.prettierrc` – linting and formatting rules
@@ -293,6 +294,7 @@ export const Primary = {
 - Use `<ClientOnly>`, `<LazyHydrate>` for client-only interactivity
 - Beware of hydration mismatches
 - Use `useHead` for SEO metadata
+- Nitro `precompress` is enabled in `nuxt.config.ts` for gzip/brotli assets
 
 ## Deployment & CI/CD
 

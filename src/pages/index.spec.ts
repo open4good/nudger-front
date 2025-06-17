@@ -1,8 +1,11 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
-import IndexPage from './index.vue'
+vi.mock('@unhead/vue', () => ({
+  useHead: () => {}
+}))
 describe('Index page', () => {
-  it('renders welcome text', () => {
+  it('renders welcome text', async () => {
+    const IndexPage = (await import('./index.vue')).default
     const wrapper = mount(IndexPage)
     expect(wrapper.text()).toContain('Nudger')
   })

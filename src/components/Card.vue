@@ -1,5 +1,6 @@
 <template>
   <div
+    role="region"
     class="p-4 border rounded"
     :class="variant === 'primary' ? 'border-blue-500 bg-blue-50' : ''"
   >

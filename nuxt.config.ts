@@ -8,7 +8,13 @@ export default defineNuxtConfig({
   // Source directory for the project
   srcDir: 'src',
   app: {
-       baseURL: process.env.BASE_URL || '/',
+    baseURL: process.env.BASE_URL || '/',
+    head: {
+      htmlAttrs: { lang: 'fr' },
+      meta: [
+        { name: 'description', content: 'Nudger frontend application' }
+      ]
+    }
   },
   // Nuxt modules
   modules: [
@@ -91,7 +97,8 @@ export default defineNuxtConfig({
     logLevel: 3,
     //externals: { inline: ['vue'] },
     compatibilityDate: '2025-06-15',
-    preset: process.env.NITRO_PRESET === 'github_pages' ? 'github-pages' : undefined
+    preset: process.env.NITRO_PRESET === 'github_pages' ? 'github-pages' : undefined,
+    precompress: true
   }
 
 } satisfies NuxtConfig)
