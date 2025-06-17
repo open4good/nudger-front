@@ -15,6 +15,10 @@ Experience Nudger frontend online:
 - [https://static.nudger.fr](https://static.nudger.fr) – statically generated version hosted on GitHub Pages.
 - [https://demo.nudger.fr](https://demo.nudger.fr) – server-rendered demo.
 
+Local development now includes a sample product page available at `/products/[gtin]`.
+Run `pnpm dev` and navigate to `http://localhost:3000/products/demo` to see the
+new components in action.
+
 
 
 **Welcome** to the Nudger front-end project. This guide is a comprehensive overview of the Nudger UI application structure, coding conventions, and tooling.
